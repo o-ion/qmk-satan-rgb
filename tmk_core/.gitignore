@@ -9,5 +9,4 @@
 *.sym
 tags
 *~
-build/
 *.bak

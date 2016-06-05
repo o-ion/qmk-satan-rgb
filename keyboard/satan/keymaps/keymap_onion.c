@@ -67,8 +67,8 @@ KC_NO, KC_NO, KC_NO, KC_NO, KC_FN2, KC_NO, KC_LEFT, KC_UP, KC_DOWN, KC_RGHT, KC_
 CapsL  |      |      |      |      |      |      | Fn4   |      |      |      |      | */
 KC_CAPS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_FN4, KC_NO, KC_NO, KC_NO, KC_NO, \
 /*
-     | C+A+D | Fn5   | BL T  |      |      | Menu   |      |      | */
-KC_NO, KC_FN0, KC_FN5, KC_FN6, KC_NO, KC_NO, KC_RAPP, KC_NO \
+     | C+A+D | Fn5   | BL T  |      |      | Menu  |       |      | */
+KC_NO, KC_FN0, KC_FN5, KC_FN6, KC_NO, KC_NO, KC_APP, KC_NO \
 ),
 
 [LAYER_2] = KEYMAP(
@@ -161,6 +161,18 @@ KC_NO  , KC_F21 , KC_F22 , KC_F23 , KC_F24 , KC_NO  , KC_NO  , KC_NO  , KC_NO  ,
 KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO   \
 )
 
+};
+
+enum function_id {
+    SHIFT_ESC,
+    RGBLED_TOGGLE,
+    RGBLED_STEP_MODE,
+    RGBLED_INCREASE_HUE,
+    RGBLED_DECREASE_HUE,
+    RGBLED_INCREASE_SAT,
+    RGBLED_DECREASE_SAT,
+    RGBLED_INCREASE_VAL,
+    RGBLED_DECREASE_VAL,
 };
 
 const uint16_t PROGMEM fn_actions[] = {
